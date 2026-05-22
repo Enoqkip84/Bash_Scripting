@@ -3,11 +3,14 @@
 echo "Enter the name of the directory you want to create:"
 read dirname
 
-mkdir "$dirname"
+if [ -d "$dirname" ]
+then
+   echo "Sorry, $dirname already exists. Exiting..."
+else 
+    mkdir "$dirname"
+    echo "Directory '$dirname' has been created successfully."
+fi
 
-echo "Directory '$dirname' has been created successfully."
-
-ls
 
 exit 0
 
