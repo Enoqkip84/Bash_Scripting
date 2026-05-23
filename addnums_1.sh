@@ -1,4 +1,9 @@
 #!/bin/bash
+
+printf "%-10s %-15s\n" "NUMBER" "SUM OF DIGITS"
+printf "%-10s %-15s\n" "------" "-------------"
+
+
 #read each number from nums.txt
 while read number
 do
@@ -16,7 +21,8 @@ do
   done
 
   #print the result
-  echo "The sum of the digits in $number - $sum"
+  #echo "The sum of the digits in $number - $sum"
+    printf "Sum of digits in %-5s -  %s\n" "$number" "$sum"
 
   done < nums.txt
 
