@@ -2,13 +2,13 @@
 
 while true
 do
-    echo "Enter a three-digit code between 110 and 150:"
+    echo "Please enter an integer between 110 and 150 inclusive:"
     read code
 
     # check for empty input
     if [ -z "$code" ]
     then
-        echo "Invalid input."
+        echo "The value provided is invalid, please try again."
         continue
     fi
 
@@ -22,12 +22,11 @@ do
     # validate range
     if (( code >= 110 && code <= 150 ))
     then
-        echo "Valid input accepted"
+        echo "Valid provided is valid"
         break
     else
-        echo "Invalid input"
+        echo "The value provided is invalid. Please try again"
     fi
-
 done
 
 exit 0
