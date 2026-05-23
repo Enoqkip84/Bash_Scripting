@@ -1,0 +1,4 @@
+{
+    "js/ts.suggest.includeAutomaticOptionalChainCompletions": false,
+    "js/ts.suggest.includeCompletionsForImportStatements": false
+}
